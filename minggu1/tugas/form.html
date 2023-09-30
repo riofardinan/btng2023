@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Biodata</title>
+</head>
+
+<body>
+    <h1>Formulir Biodata</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="name">Nama</label></td>
+                <td>:</td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="nim">NIM</label></td>
+                <td>:</td>
+                <td><input type="text" name="nim" id="nim"></td>
+            </tr>
+            <tr>
+                <td><label for="jurusan">Jurusan</label></td>
+                <td>:</td>
+                <td><input type="text" name="jurusan" id="jurusan"></td>
+            </tr>
+            <tr>
+                <td><label for="fakultas">Fakultas</label></td>
+                <td>:</td>
+                <td>
+                    <select name="fakultas" id="fakultas">
+                        <option value="Fakultas Ilmu Komputer">Fakultas Ilmu Komputer</option>
+                        <option value="Fakultas Ilmu Komputer">Fakultas Kesehatan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="angkatan">Angkatan</label></td>
+                <td>:</td>
+                <td><input type="number" name="angkatan" id="angkatan"></td>
+            </tr>
+            <tr>
+                <td><label for="jk">Jenis Kelamin</label></td>
+                <td>:</td>
+                <td>
+                    <label for="jk">Pria</label><input type="radio" name="jk" id="jk">
+                    <label for="jk">Wanita</label><input type="radio" name="jk" id="jk">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>:</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+        </table>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button><a href="index.html">Biodata</a></button>
+    </form>
+</body>
+
+</html>
