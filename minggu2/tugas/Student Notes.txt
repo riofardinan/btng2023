@@ -1,0 +1,3 @@
+Navbar Scroll = ketika discroll navbar menjadi warna biru dan ketika mentok diatas navbar transparant
+Tombol navbar di tampilan mobile = ketika tombol bars diklik akan berubah menjadi tombol silang dan akan muncul list navbar dari sebelah kanan ke kiri
+Parallax jumbotron = ketika di scroll text akan mengikuti scroll dengan background yang tetap 

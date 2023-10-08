@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Merienda:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    z-index: 100;
+}
+
+nav.active {
+    transition: all 0.2s ease-in-out;
+    z-index: 100;
+    background-color: #062d9a;
+}
+
+nav a.brand {
+    font-size: 24px;
+    font-family: 'Dancing Script';
+    margin-left: 12%;
+}
+
+nav a {
+    font-size: 15px;
+    color: #fff;
+    line-height: 60px;
+}
+
+nav a.icon {
+    font-size: 18px;
+}
+
+nav a :hover {
+    color: #ff3838;
+}
+
+nav ul {
+    margin-right: 12%;
+    float: right;
+}
+
+nav ul li {
+    position: relative;
+    font-family: 'Roboto';
+    padding: 0 15px;
+    display: inline-block;
+    justify-content: center;
+
+}
+
+nav ul li a:hover {
+    color: #ff3838;
+    transition: all 0.2s ease-in-out;
+}
+
+nav #nav-button {
+    display: none;
+    float: right;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul li a i {
+    font-size: 1.1em;
+}
+
+
+.dropdown ul {
+    transform: translate(-40%);
+    background-color: #062d9a;
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover>ul {
+    display: block;
+}
+
+.dropdown ul li {
+    width: 100px;
+    display: inline-flex;
+    margin: 0;
+}
+
+
+.jumbotron {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    /* background: linear-gradient(#069A8E 0%, #069A8E 60%, #fff 60%, #fff 100%); */
+    background-image: url('../img/bg_men.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.jumbotron .content {
+    text-align: center;
+    color: #fff;
+}
+
+.jumbotron h1 {
+    font-family: 'Merienda';
+}
+
+.jumbotron span {
+    font-family: 'Poppins', sans-serif;
+}
+
+.jumbotron .button {
+    border: 1px solid #000;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10%;
+    text-decoration: none;
+    color: #000;
+    background-color: #069A8E;
+}
+
+.jumbotron .button:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #062d9a;
+}
+
+.jumbotron .btn-search {
+    background-color: #fff;
+    margin-left: -1px;
+    padding: 5px 12px;
+    min-height: 35px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    border: none;
+}
+
+.jumbotron .input-search {
+    border: none;
+    padding: 5px 12px;
+    min-width: 500px;
+    min-height: 35px;
+    border-radius: 5px 0 0 5px;
+}
+
+.jumbotron .search {
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section figure {
+    margin: 15px;
+}
+
+main section img {
+    margin: 0 10px;
+    width: 70px;
+}
+
+main section .icon a {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    color: #000;
+}
+
+main section {
+    padding: 40px 0 10px;
+    text-align: center;
+}
+
+main section .icon {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+article h1 {
+    font-family: 'Merienda';
+}
+
+article small {
+    font-family: 'Roboto';
+}
+
+article {
+    padding: 20px 5%;
+    text-align: center;
+    justify-content: center;
+}
+
+.product {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+article figure {
+    border-radius: 15px 15px 10px 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    margin: 15px;
+}
+
+.product .btn {
+    margin-top: 15px;
+    display: flex;
+}
+
+.product figure button {
+    width: 100%;
+    height: 40px;
+}
+
+.product figure button:hover {
+    transition: all .2s ease-in-out;
+    box-shadow: inset 0px 0px 50px 50px rgba(0, 0, 0, 0.15);
+}
+
+.product .btn .btn-wishlist {
+    border-radius: 0 0 0 10px;
+    font-size: large;
+    color: #fff;
+    border: none;
+    background-color: #ce1f30;
+}
+
+.product .btn .btn-cart {
+    border-radius: 0 0 10px 0;
+    background-color: #0049b8;
+    border: none;
+    color: #fff;
+    font-size: large;
+}
+
+.product figure p {
+    font-family: 'Roboto';
+}
+
+.product .images {
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product img:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.product figcaption {
+    font-family: 'Poppins';
+    line-height: 35px;
+    font-weight: bold;
+}
+
+
+.product .discount {
+    text-decoration: line-through;
+    color: #ce1f30;
+}
+
+aside {
+    align-items: center;
+    background-image: url('../img/latar.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.profile {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0;
+    padding: 0 14%;
+}
+
+.profile .image {
+    padding: 2% 5% 2% 0;
+    flex-basis: 30%;
+}
+
+.profile .image img {
+    width: 250px;
+    border-radius: 20px;
+    filter: drop-shadow(8px 8px 0px #062d9a);
+}
+
+.profile .content {
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    flex-basis: 70%;
+    padding: 25px 30px;
+    border-radius: 20px;
+    text-align: start;
+}
+
+.profile .content h2 {
+    font-family: 'Poppins';
+    color: #062d9a;
+}
+
+.profile .content h5 {
+    padding: 15px 0;
+    display: inline-block;
+    border-bottom: 3px solid #062d9a;
+}
+
+.profile .content .description {
+    font-family: 'Roboto';
+    margin-top: 15px;
+}
+
+.profile .content .button {
+    margin-top: 8%;
+}
+
+.profile .content .btn {
+    font-size: 12px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 1.5% 2.5%;
+    color: #fff;
+    background-color: #062d9a;
+}
+
+.profile .content .btn:hover {
+    transition: all .2s ease-in-out;
+    box-shadow: inset 0px 0px 50px 50px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+footer {
+    line-height: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #062d9a;
+    padding: 5% 12%;
+    color: white;
+    text-align: center;
+}
+
+footer section {
+    margin-right: 50px;
+}
+
+footer p {
+    text-align: start;
+}
+
+footer p a {
+    opacity: 85%;
+    color: #fff;
+}
+
+footer p a:hover {
+    opacity: 1;
+}
+
+@media (max-width: 767.98px) {
+    nav ul {
+        right: -500px;
+        background-color: #062d9a;
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        margin: 0;
+    }
+
+    nav a.brand {
+        margin-left: 5%;
+    }
+
+    #nav-button.active+ul {
+        right: 0;
+    }
+
+
+
+    #nav-button.active .fa-bars,
+    #nav-button .fa-times {
+        display: none;
+    }
+
+    #nav-button.active .fa-times {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav #nav-button {
+        margin: 10px 5% 0 0;
+        display: flex;
+    }
+
+    .jumbotron img {
+        display: none;
+    }
+
+    nav.active-color {
+        background-color: #062d9a;
+    }
+
+    aside .profile {
+        flex-grow: 1;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .profile .content {
+        margin: 15px 0;
+    }
+}
