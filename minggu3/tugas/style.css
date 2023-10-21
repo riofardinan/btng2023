@@ -1,0 +1,51 @@
+.btn-icon {
+    background-color: #bce954;
+}
+
+.btn-icon:hover {
+    background-color: #bce954d8;
+}
+
+.sub-nav .item {
+    margin: 0 15px 0 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sub-nav .item:hover {
+    color: #6d8d22;
+    transition: ease-in-out 0.15s;
+}
+
+.dropdown {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    border-radius: 5px;
+    min-width: 120px !important;
+}
+
+.dropdown-item {
+    opacity: 80%;
+    padding: 3px 18px !important;
+    font-size: 12px !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 8px;
+
+}
+
+hr.judul {
+    opacity: 100%;
+    background-color: #6d8d22;
+    border: 1.5px solid #6d8d22;
+}
+
+.sub-nav {
+    overflow: auto;
+}
